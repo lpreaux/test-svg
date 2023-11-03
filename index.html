@@ -25,9 +25,26 @@
         
         <div>
             <h2>< svg ></h2>
+            <!--
+                Pour la heigth et la width il faut réutiliser les valeurs
+                de la balise <svg> dans le fichier svg.
+            -->
             <svg class="svg" height="24" width="24">
+                <!--
+                    Le href et l'URL pour charger le fichier svg + '#' et l'id de
+                    la balise <svg> du fichier svg (à ajouter si il n'existe pas)
+                -->
                 <use href="/add.svg#add"></use>
             </svg>
+            <!--
+                Pour pouvoir modifier la couleur du svg avec la propriété css 'color',
+                il changer l'attribut de 'fill' de la balise <svg> dans le fichier svg et lui donner
+                la valeur 'currentColor'.
+
+                /!\ si des éléments enfant de la balise <svg> dans le fichier possède l'attribut 'fill'
+                    leur valeur aura la priorité. Dans ce cas il faut soit passer leur valeur à 'currentColor'
+                    également, soit supprimé l'attribut.
+            -->
         </div>
     </div>
 
