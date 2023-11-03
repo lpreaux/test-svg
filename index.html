@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test svg</title>
+    <style>
+        .svg {
+            background-color: bisque;
+            color: crimson;
+        }
+
+        .svg:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test svg</h1>
+    <div class="wrapper">
+        <div>
+            <h2>< img ></h2>
+            <img src="/add.svg"
+                 class="svg">
+        </div>
+        
+        <div>
+            <h2>< svg ></h2>
+            <svg class="svg" height="24" width="24">
+                <use href="/add.svg#add"></use>
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
